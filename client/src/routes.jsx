@@ -6,12 +6,14 @@ import Members from "./pages/Members.jsx";
 import RegisterPlacement from "./pages/RegisterPlacement.jsx";
 import Terms from "./pages/Terms.jsx";
 import Contact from "./pages/Contact.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 const AppRoutes = () => {
   return (
     <Routes>
+        <ScrollToTop /> 
       <Route path="/" element={<Login />} />
 
       <Route

@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import AppRoutes from "./routes.jsx";
 import "./css/global.css";
 
+
 function App() {
   return (
     <div className="app-layout">
