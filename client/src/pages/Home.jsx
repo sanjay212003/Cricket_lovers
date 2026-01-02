@@ -66,7 +66,7 @@ const Home = () => {
 
       {/* ---------- ACTION BUTTONS ---------- */}
       <div className="home-actions">
-        <button onClick={() => navigate("/dashboard")}>
+        <button onClick={() => navigate("/members")}>
           View Members
         </button>
 

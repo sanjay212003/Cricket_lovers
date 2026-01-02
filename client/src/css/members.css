@@ -1,56 +1,4 @@
-.members-container {
-  padding: 1.5rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.members-container h1 {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  color: #1d2671;
-}
-
-/* ---------- SECTION ---------- */
-.members-section {
-  margin-bottom: 3rem;
-}
-
-.members-section h2 {
-  margin-bottom: 1rem;
-  color: #1d2671;
-  font-size: 1.4rem;
-}
-
-/* ---------- PARTY SCHEDULERS ---------- */
-.scheduler-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.2rem;
-}
-
-.scheduler-card {
-  padding: 1.4rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #1d2671;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease;
-}
-
-.scheduler-card:hover {
-  transform: translateY(-6px);
-}
-
-/* ---------- MEMBERS PLACEHOLDER ---------- */
-.members-placeholder {
-  font-size: 1.05rem;
-  color: #777;
-  font-style: italic;
-}
-
+/* ---------- CONTAINER ---------- */
 .members-container {
   padding: 1.5rem;
   max-width: 1000px;
@@ -74,13 +22,14 @@
   font-size: 1.4rem;
 }
 
-/* ---------- PARTY SCHEDULERS ---------- */
+/* ---------- PARTY SCHEDULERS GRID ---------- */
 .scheduler-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
 }
 
+/* ---------- CARD ---------- */
 .scheduler-card {
   background-color: #ffffff;
   border-radius: 14px;
@@ -88,20 +37,26 @@
   text-align: center;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .scheduler-card:hover {
   transform: translateY(-6px);
 }
 
+/* ---------- IMAGE (🔥 FIXED FOR ALL SCREENS) ---------- */
 .scheduler-card img {
   width: 100%;
-  height: 160px;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;     /* KEY FIX */
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 14px;
   margin-bottom: 0.7rem;
 }
 
+/* ---------- NAME ---------- */
 .scheduler-card p {
   font-size: 1.1rem;
   font-weight: 800;
@@ -115,15 +70,7 @@
   font-style: italic;
 }
 
-/* ---------- MOBILE ---------- */
-@media (max-width: 480px) {
-  .scheduler-card img {
-    height: 140px;
-  }
-}
-
-
-/* ---------- MOBILE ---------- */
+/* ---------- MOBILE OPTIMIZATION ---------- */
 @media (max-width: 480px) {
   .members-container {
     padding: 1rem;
@@ -131,5 +78,10 @@
 
   .members-section h2 {
     font-size: 1.2rem;
+  }
+
+  .scheduler-card img {
+    max-width: 100%;
+    aspect-ratio: 4 / 5;   /* portrait-friendly for Android */
   }
 }
