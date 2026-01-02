@@ -1,34 +1,71 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
+
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import Members from "./pages/Members.jsx";
 import RegisterPlacement from "./pages/RegisterPlacement.jsx";
 import Terms from "./pages/Terms.jsx";
 import Contact from "./pages/Contact.jsx";
-import ScrollToTop from "./components/ScrollToTop";
 
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 const AppRoutes = () => {
   return (
-    <Routes>
-        <ScrollToTop /> 
-      <Route path="/" element={<Login />} />
+    <>
+      {/* 👇 MUST be outside Routes */}
+      <ScrollToTop />
 
-      <Route
-        path="/home"
-        element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
-      <Route path="/members" element={<Members />} />
-      <Route path="/register" element={<RegisterPlacement />} />
-      <Route path="/terms" element={<Terms />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Login />} />
+
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/members"
+          element={
+            <ProtectedRoute>
+              <Members />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/register"
+          element={
+            <ProtectedRoute>
+              <RegisterPlacement />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/terms"
+          element={
+            <ProtectedRoute>
+              <Terms />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            <ProtectedRoute>
+              <Contact />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </>
   );
 };
 
