@@ -32,7 +32,9 @@ mongoose
     console.log("✅ MongoDB connected");
     app.listen(PORT, () => {
       console.log(
-        `🚀 Server running on port ${process.env.PORT || 5000}`
+        `🚀 Server running on port ${process.env.PORT || 5000}`;
+        console.log("DB IN USE 👉", mongoose.connection.name);
+
       );
     });
   })
