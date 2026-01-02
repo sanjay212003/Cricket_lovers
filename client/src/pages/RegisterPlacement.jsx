@@ -4,6 +4,7 @@ import "../css/register.css";
 const RegisterPlacement = () => {
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -43,7 +44,7 @@ const RegisterPlacement = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/placements/register", {
+      const res = await fetch(`${API_URL}/api/placements/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
