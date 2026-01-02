@@ -2,23 +2,60 @@ import Placement from "../models/Placement.js";
 
 export const registerPlacement = async (req, res) => {
   try {
-    console.log("Incoming placement data:", req.body);
+    console.log("➡️ Incoming data:", req.body);
 
-    const placement = new Placement(req.body);
+    const {
+      name,
+      email,
+      roomNumber,
+      company,
+      band,
+      packageCTC,
+      partyDate,
+      isCricketMember,
+      isHosteller,
+      isGettingFacilities
+    } = req.body;
 
-    const saved = await placement.save();
+    // Validation
+    if (
+      !name ||
+      !email ||
+      !roomNumber ||
+      !company ||
+      !band ||
+      !packageCTC ||
+      !partyDate ||
+      !isCricketMember ||
+      !isHosteller ||
+      !isGettingFacilities
+    ) {
+      return res.status(400).json({ message: "All fields are required" });
+    }
 
-    console.log("Placement SAVED in DB:", saved);
+    const placement = new Placement({
+      name,
+      email,
+      roomNumber,
+      company,
+      band,
+      packageCTC: Number(packageCTC),      // ✅ FIX
+      partyDate: new Date(partyDate),      // ✅ FIX
+      isCricketMember,
+      isHosteller,
+      isGettingFacilities
+    });
 
-    return res.status(201).json({
-      message: "Placement saved successfully",
-      data: saved
+    const savedPlacement = await placement.save();
+
+    console.log("✅ Placement saved:", savedPlacement);
+
+    res.status(201).json({
+      message: "🎉 Placement registered successfully",
+      data: savedPlacement
     });
   } catch (error) {
-    console.error("Placement save FAILED:", error);
-    return res.status(500).json({
-      message: "Placement save failed",
-      error: error.message
-    });
+    console.error("❌ Placement save failed:", error);
+    res.status(500).json({ message: error.message });
   }
 };
