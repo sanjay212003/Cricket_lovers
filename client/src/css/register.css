@@ -1,0 +1,238 @@
+/* ===============================
+   PAGE CONTAINER
+================================ */
+.register-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.register-container h1 {
+  text-align: center;
+  color: #1d2671;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* ===============================
+   INFO BOXES (RULES + T&C)
+================================ */
+.info-box {
+  background: #ffffff;
+  padding: 1.5rem 1.8rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.info-box h2 {
+  margin-bottom: 0.8rem;
+  color: #1d2671;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.info-box ul {
+  padding-left: 1.2rem;
+}
+
+.info-box li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ===============================
+   TERMS CHECKBOX
+================================ */
+.terms-checkbox {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #222;
+}
+
+.terms-checkbox input {
+  margin-right: 0.6rem;
+  transform: scale(1.1);
+}
+
+/* ===============================
+   FORM CARD
+================================ */
+.register-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1d2671;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* ===============================
+   INPUTS & SELECTS
+================================ */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: #1d2671;
+  box-shadow: 0 0 0 2px rgba(29, 38, 113, 0.15);
+}
+
+/* ===============================
+   DATE LABEL
+================================ */
+.date-label {
+  font-size: 0.85rem;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================ */
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #1d2671, #4a5bdc);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(29, 38, 113, 0.35);
+}
+
+.register-form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ===============================
+   DISABLED FORM STATE
+================================ */
+.register-form.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* ===============================
+   MESSAGE
+================================ */
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: #1d2671;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 1rem;
+  }
+
+  .register-form {
+    padding: 1.5rem;
+  }
+
+  .register-container h1 {
+    font-size: 1.6rem;
+  }
+}
+/* ===============================
+   POPUP MODAL
+================================ */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: popupFade 0.3s ease;
+}
+
+.popup-box h2 {
+  color: #1d2671;
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.popup-box p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.popup-box button {
+  padding: 0.6rem 1.6rem;
+  background: linear-gradient(135deg, #1d2671, #4a5bdc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  opacity: 0.95;
+}
+
+/* animation */
+@keyframes popupFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

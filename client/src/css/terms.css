@@ -1,0 +1,54 @@
+.terms-container {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.terms-container h1 {
+  text-align: center;
+  color: #1d2671;
+  margin-bottom: 1.5rem;
+}
+
+.terms-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* ---------- TERMS BOX ---------- */
+.terms-box {
+  background: white;
+  padding: 1.3rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.terms-box h2 {
+  margin-bottom: 0.6rem;
+  color: #1d2671;
+}
+
+.terms-box ul {
+  padding-left: 1.2rem;
+}
+
+.terms-box li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- NOTE ---------- */
+.terms-note {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+  .terms-container {
+    padding: 1rem;
+  }
+}

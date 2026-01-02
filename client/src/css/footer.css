@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #1d2671;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.85rem;
+}
+
+.footer-sub {
+  font-size: 0.75rem;
+  color: #ddd;
+  margin-top: 0.3rem;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 0.75rem;
+  }
+}
