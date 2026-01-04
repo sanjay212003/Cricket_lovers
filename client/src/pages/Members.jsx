@@ -8,7 +8,7 @@ const partySchedulers = [
   },
   {
     name: "Sanjay",
-    img: "https://img.sanishtech.com/u/0bb289ce6dfaaba3baf6454939ededf9.jpeg"
+    img: "https://image2url.com/r2/default/images/1767536716245-dedf3b89-bd54-49e0-a6ce-426f696877c3.jpeg"
   },
   {
     name: "Naveen",
@@ -48,7 +48,12 @@ const membersList = [
   {
     name: "Karthik",
     img: "https://img.sanishtech.com/u/484e4a205a9bc741b8737bf424e9ccaf.jpeg"
+  },
+  {
+    name: "Darshan",
+    img: ""
   }
+
   // 👉 you can keep adding members here
 ];
 
