@@ -27,7 +27,7 @@ const membersList = [
   },
   {
     name: "Suhas",
-    img: "https://img.sanishtech.com/u/89cad26b5c71103651f3b545fd5ad2a7.jpeg"
+    img: "https://img.sanishtech.com/u/b776ada4964dbcd2d03256086ccc000d.jpeg"
   }
   // 👉 you can keep adding members here
 ];
