@@ -29,13 +29,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5rem;
-  justify-items: center; /* ⭐ centers single card */
+  justify-items: center;
 }
 
 /* ---------- CARD ---------- */
 .scheduler-card {
   width: 100%;
-  max-width: 260px;       /* ⭐ PREVENT FULL WIDTH */
+  max-width: 260px;
   background-color: #ffffff;
   border-radius: 16px;
   padding: 1rem;
@@ -48,13 +48,14 @@
   transform: translateY(-6px);
 }
 
-/* ---------- IMAGE ---------- */
+/* ---------- IMAGE WRAPPER ---------- */
 .scheduler-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;     /* ⭐ perfect cropping */
+  aspect-ratio: 3 / 4;          /* ⭐ KEY FIX */
+  object-fit: cover;
   border-radius: 14px;
   margin-bottom: 0.7rem;
+  background-color: #f2f3f7;
 }
 
 /* ---------- NAME ---------- */
@@ -72,13 +73,18 @@
   font-style: italic;
 }
 
-/* ---------- MOBILE ---------- */
+/* ---------- TABLET ---------- */
 @media (max-width: 768px) {
+  .scheduler-card {
+    max-width: 240px;
+  }
+
   .scheduler-card img {
-    height: 180px;
+    aspect-ratio: 4 / 5;
   }
 }
 
+/* ---------- MOBILE ---------- */
 @media (max-width: 480px) {
   .members-container {
     padding: 1rem;
@@ -88,8 +94,12 @@
     max-width: 100%;
   }
 
+  /* 🔥 PREVENT TOP CUTTING */
   .scheduler-card img {
-    height: 170px;
+    aspect-ratio: auto;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;     /* ⭐ MOST IMPORTANT FIX */
   }
 
   .members-section h2 {
