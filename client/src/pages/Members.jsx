@@ -23,7 +23,7 @@ const partySchedulers = [
 const membersList = [
   {
     name: "Shivaraj",
-    img: "https://instasize.com/p/39d533b21fb68e169bc6c9ca423fe0c35328614bab7f7d9a7a0b9e0335f88c02"
+    img: "https://img.sanishtech.com/u/86f6a01685c277d7e1c3ef7013a9bc78.jpeg"
   }
   // 👉 you can keep adding members here
 ];
