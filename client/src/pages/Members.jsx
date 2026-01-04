@@ -32,6 +32,10 @@ const membersList = [
   {
     name: "Bathinanna",
     img: "https://img.sanishtech.com/u/96b197482433546742a1b74b817ea3b9.jpeg"
+  },
+  {
+    name: "Shivaprasad",
+    img: "https://img.sanishtech.com/u/2e8f43533e9e5d14d976797f2c3bc75b.jpg"
   }
   // 👉 you can keep adding members here
 ];
