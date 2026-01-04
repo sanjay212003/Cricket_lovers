@@ -8,7 +8,7 @@ const partySchedulers = [
   },
   {
     name: "Sanjay",
-    img: "https://image2url.com/r2/default/images/1767536716245-dedf3b89-bd54-49e0-a6ce-426f696877c3.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/sanjay.jpeg"
   },
   {
     name: "Naveen",
@@ -23,35 +23,35 @@ const partySchedulers = [
 const membersList = [
   {
     name: "Shivaraj",
-    img: "https://img.sanishtech.com/u/86f6a01685c277d7e1c3ef7013a9bc78.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/shivaraj.jpeg"
   },
   {
     name: "Suhas",
-    img: "https://img.sanishtech.com/u/b776ada4964dbcd2d03256086ccc000d.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/suhas.jpeg"
   },
   {
     name: "Bathinanna",
-    img: "https://img.sanishtech.com/u/96b197482433546742a1b74b817ea3b9.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/batthii.jpeg"
   },
   {
     name: "Shivaprasad",
-    img: "https://img.sanishtech.com/u/2e8f43533e9e5d14d976797f2c3bc75b.jpg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/shivaprasad.jpg"
   },
   {
     name: "Darshan Chouthayi",
-    img: "https://img.sanishtech.com/u/8b8a2ae1ee490afa8b75df0a2a57509f.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/chaoutayi.jpeg"
   },
   {
     name: "Akash Donge",
-    img: "https://img.sanishtech.com/u/fe6db398fd4435b13d1a281d17024281.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/donge.jpeg"
   },
   {
     name: "Karthik",
-    img: "https://img.sanishtech.com/u/484e4a205a9bc741b8737bf424e9ccaf.jpeg"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/karthik.jpeg"
   },
   {
     name: "Darshan",
-    img: "https://cdn.corenexis.com/view/14442662160"
+    img: "https://raw.githubusercontent.com/sanjay212003/aryabhata-bois/main/darshan%20h%20s.jpg"
   }
 
   // 👉 you can keep adding members here
