@@ -51,7 +51,7 @@ const membersList = [
   },
   {
     name: "Darshan",
-    img: ""
+    img: "https://cdn.corenexis.com/view/14442662160"
   }
 
   // 👉 you can keep adding members here
