@@ -8,7 +8,7 @@ const partySchedulers = [
   },
   {
     name: "Sanjay",
-    img: "https://sanju3.edgeone.app/IMG-20260101-WA0017.jpg"
+    img: "https://img.sanishtech.com/u/0bb289ce6dfaaba3baf6454939ededf9.jpeg"
   },
   {
     name: "Naveen",
